@@ -1,0 +1,27 @@
+.additional-information {
+    display: none;
+    background: var(--primary-purple);
+}
+
+.additional-information_size-max {
+    height: 50px;
+}
+
+.additional-information__block {
+    display: flex;
+    align-items: center;
+}
+
+.additional-information__block_size-max {
+    margin-left: 7%;
+}
+
+.additional-information__text {
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.additional-information__text_size-max {
+    padding-left: 15px;
+}

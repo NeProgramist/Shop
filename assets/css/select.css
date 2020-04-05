@@ -1,0 +1,28 @@
+.select {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 15px;
+    background: var(--purple-whitisht);
+}
+
+.select_max-width {
+    margin: 30px auto 10px auto;
+    width: 86%;
+    max-width: 400px;
+    height: 100px;
+}
+
+.select__item {
+    font-size: 18px;
+    text-decoration: none;
+    margin: auto;
+}
+
+.select__item_enabled {
+    font-weight: 700;
+    color: var(--purple-dark)
+}
+
+.select__item_disabled {
+    color: var(--primary-purple)
+}

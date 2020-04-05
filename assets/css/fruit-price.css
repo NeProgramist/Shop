@@ -1,0 +1,23 @@
+
+.fruit__price {
+    color: var(--primary-purple);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.fruit__price-num {
+    font-size: 40px;
+}
+
+.fruit__price-num_centered {
+    margin: auto 0;
+}
+
+.fruit__price-text {
+    font-size: 16px;
+}
+
+.fruit__price-text_centered {
+    margin: auto 0 6px 0;
+}

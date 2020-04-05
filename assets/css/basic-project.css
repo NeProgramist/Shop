@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=cyrillic');
+
+:root{
+    --primary-purple: #B083C0;
+    --purple-dark: #805C8D;
+    --purple-light: #D7C1E0;
+    --purple-whitisht: #F0E3F4;
+    --white: #ffffff;
+    --gray:  #F3F3F3;
+    --gray-dark: #BDBDBD;
+    --orange: #F2994A;
+    --orange-light: #FFEEDF;
+}
+
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+::placeholder {
+    color: var(--primary-purple)
+}
+
+p {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto, sans-serif;
+    background: var(--purple-light);
+}

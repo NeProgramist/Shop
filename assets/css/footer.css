@@ -1,0 +1,38 @@
+.footer {
+    display: flex;
+    flex: 0 0 auto;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    align-items: center;
+    background: var(--primary-purple);
+}
+
+.footer_size-max {
+    width: 100%;
+    height: 160px;
+}
+
+.footer__info {
+    color: var(--purple-light);
+    text-align: center;
+}
+
+.footer__info_centered {
+    margin: auto 0;
+}
+
+.footer__column {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__column_size-max {
+    margin: 10px auto 0 auto;
+    width: 250px
+}
+
+.footer__icon_centered {
+    width: 40px;
+    height: 40px;
+    padding-left: 30px;
+}
