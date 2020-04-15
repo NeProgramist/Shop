@@ -10,7 +10,13 @@
 
 /*АДАПТИВНОСТЬ*/
 @media (min-width: 800px) {
-    .fruit_size-max {
+    .fruit:hover {
+        box-shadow: 0 0 50px rgba(100%, 100%, 100%, 0.5);
+        transform: scale(1.2);
+        transition: all 0.5s ease;
+    }
+
+    .fruit_size-default {
         height: 430px;
     }
 
@@ -28,11 +34,18 @@
 }
 
 @media (min-width: 1000px) {
+
+    .fruit:hover {
+        box-shadow: 0 0 50px rgba(100%, 100%, 100%, 0.5);
+        transform: scale(1.2);
+        transition: all 0.5s ease;
+    }
+
     .fruit__info {
         display: flex;
     }
 
-    .fruit_size-max {
+    .fruit_size-default {
         margin: 20px;
     }
 

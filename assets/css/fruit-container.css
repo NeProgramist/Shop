@@ -2,11 +2,20 @@
     flex: 1 0 auto;
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: auto;
     grid-gap: 0;
 }
 
 .container_size-max {
     margin: 0 auto 100px auto;
+}
+
+.fruit:hover {
+    height: 430px;
+}
+
+.fruit:hover div.fruit__info {
+    display: flex;
 }
 
 .fruit {
@@ -15,17 +24,19 @@
     align-content: center;
     background: var(--white);
     border-radius: 15px;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    box-shadow: 15px 10px 20px rgba(50%, 36%, 56%, 0.5);
+    transition: all 0.5s ease;
+
 }
 
 .fruit__info {
-    display: none;
+    display:none;
     flex-direction: column;
     justify-content: center;
     margin-bottom: 20px;
 }
 
-.fruit_size-max {
+.fruit_size-default {
     width: 290px;
     height: 210px;
     margin: 40px 20px 0 20px;
