@@ -106,7 +106,7 @@
     </div>
 </div>
 
-<button class="order__confirm-button order__confirm-button_size-max">ВСЕГО: 26 грн</button>
+<button class="order__confirm-button order__confirm-button_size-max" onclick="showClientInfo()">ВСЕГО: 26 грн</button>
 
 <div class="footer footer_size-max" >
     <div class="footer__column_size-max"></div>
@@ -130,5 +130,26 @@
         </div>
     </div>
 </div>
+
+
+<div class="client client_size-max">
+    <p>ВАШИ КОНТАКТНЫЕ ДАННЫЕ</p>
+    <div class="client__block client__block_size-max">
+        <p>email</p>
+        <input type="text" class="client__input client__input_default">
+    </div>
+    <div class="client__block client__block_size-max">
+        <p>phone</p>
+        <input type="text" class="client__input client__input_default">
+    </div>
+    <div class="client__block client__block_size-max">
+        <p>destination</p>
+        <input type="text" class="client__input client__input_default">
+    </div>
+    <div class="client__block client__block_size-max">
+        <button class="client__confirm-button client__confirm-button_size-max" onclick="hideClientInfo()">Подтвердить</button>
+    </div>
+</div>
 </body>
+<script src="assets/js/showClientInfo.js" type="text/javascript"></script>
 </html>

@@ -5,6 +5,8 @@
 @import "css/fruit-price.css";
 @import "css/order-container.css";
 @import "css/footer.css";
+@import "css/client.css";
+
 
 
 
@@ -16,6 +18,11 @@
 
     .order__column {
         padding: 0 20%
+    }
+
+    .client_size-max {
+        width: 600px;
+        padding:10px 50px 50px 50px;
     }
 }
 
@@ -78,7 +85,6 @@
     .footer__column_size-max{
         margin: auto 0 auto auto;
     }
-
 }
 
 
