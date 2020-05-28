@@ -1,7 +1,7 @@
 .client {
     display: none;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     text-align: center;
     color: var(--white);
     font-size: 40px;

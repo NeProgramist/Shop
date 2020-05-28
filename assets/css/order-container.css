@@ -1,19 +1,20 @@
 .shopping-cart__text {
-    text-align: center;
+    justify-content: center;
     color: var(--white);
 }
 
-.container {
+.order-container {
+    display: flex;
+    flex-direction: column;
     border-radius: 15px;
     background: var(--white);
 }
 
-.container_size-max {
-    min-height: 350px;
+.order-container_size-max {
+    min-height: 600px;
     width: 70%;
     margin: 20px auto 20px auto;
 }
-
 
 .order {
     display: grid;
@@ -37,6 +38,7 @@
 
 .order__column {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     padding: 0 10%;
 }
@@ -51,6 +53,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+    padding: 0 4%;
 }
 
 .order__delete {
@@ -106,6 +110,7 @@
     color: var(--white);
     font-size: 32px;
     font-weight: 700;
+    justify-content: center;
 }
 
 .order__confirm-button_size-max {

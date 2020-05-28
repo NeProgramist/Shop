@@ -1,4 +1,4 @@
-.container {
+.fruit-container {
     flex: 1 0 auto;
     display: grid;
     grid-template-columns: 1fr;
@@ -6,7 +6,8 @@
     grid-gap: 0;
 }
 
-.container_size-max {
+.fruit-container_size-min {
+    min-height: 400px;
     margin: 0 auto 100px auto;
 }
 
@@ -26,7 +27,6 @@
     border-radius: 15px;
     box-shadow: 15px 10px 20px rgba(50%, 36%, 56%, 0.5);
     transition: all 0.5s ease;
-
 }
 
 .fruit__info {
@@ -34,6 +34,10 @@
     flex-direction: column;
     justify-content: center;
     margin-bottom: 20px;
+}
+
+.fruit__info_size-default {
+    height: 190px;
 }
 
 .fruit_size-default {
@@ -74,8 +78,9 @@
     flex-direction: row;
 }
 
+
 .fruit__buttons_centered {
-    margin: 0 auto
+    justify-content: center;
 }
 
 .fruit__shopping-cart {
@@ -84,6 +89,15 @@
     background: var(--orange);
     border-radius: 15px;
     border: none;
+    transition: all 0.5s ease;
+}
+
+.fruit__shopping-cart:active {
+    background: var(--orange-light);
+}
+
+.fruit__shopping-cart_inactive {
+    background: var(--orange-light);
 }
 
 .fruit__shopping-cart_size-max {

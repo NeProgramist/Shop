@@ -6,6 +6,10 @@
     text-align: center;
 }
 
+.fruit__price_bottomed {
+    margin-bottom: 0;
+}
+
 .fruit__price-num {
     font-size: 40px;
 }
@@ -20,4 +24,12 @@
 
 .fruit__price-text_centered {
     margin: auto 0 6px 0;
+}
+
+.fruit__price-text_bottomed {
+    margin: auto 0 32px 0;
+}
+
+.fruit__price-info_bottomed {
+    margin: auto auto 0 auto;
 }
