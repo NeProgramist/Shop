@@ -35,141 +35,40 @@
         <input type="text" placeholder="поиск" class="header__search header__search_size-max">
 
         <div class="header__column header__column_size-max">
-            <a href="favourites.html" class="header__column_unlighted">
+            <div class="header__column_unlighted" onclick="showProducts(-1)">
                 <div class="header__icon header__icon_size-max">
-                    <img src="assets/images/heart.svg" alt="favourites">
+                    <img src="assets/images/favourite-white.svg" alt="favourites">
                     <p class="header__icon-text header__size-text_size-max">Избраное</p>
                 </div>
-            </a>
+            </div>
 
-            <a href="shopping-cart.html" class="header__column_unlighted">
+            <div class="header__column_unlighted" onclick="showCart()">
                 <div class="header__icon header__icon_size-max">
-                        <img src="assets/images/shopping-cart.svg" alt="shopping-cart">
-                        <p class="header__icon-text header__icon-text_size-max">Корзина</p>
+                    <img src="assets/images/shopping-cart.svg" alt="shopping-cart">
+                    <p class="header__icon-text header__icon-text_size-max">Корзина</p>
                 </div>
-            </a>
+            </div>
         </div>
     </div>
     <div class="header__bottom">
-        <input type="text" placeholder="поиск" class="header__search header__search_size-max">
+        <input type="text" placeholder="поиск" class="header__search header__search_size-max" >
     </div>
 </div>
-
 
 <div class="select select_max-width">
-    <a class="select__item select__item_disabled">ВСЕ</a>
-    <a class="select__item select__item_disabled">ЯГОДЫ</a>
-    <a class="select__item select__item_enabled">ЦИТРУСОВЫЕ</a>
-    <a class="select__item select__item_disabled">ЭКЗОТИЧЕСКИЕ</a>
+    <p class="select__item select__item_disabled" onclick="showProducts()">ВСЕ</p>
+    <p class="select__item select__item_disabled" onclick="showProducts(1)">ЯГОДЫ</p>
+    <p class="select__item select__item_enabled" onclick="showProducts(2)">ЦИТРУСОВЫЕ</p>
+    <p class="select__item select__item_disabled" onclick="showProducts(3)">ЭКЗОТИЧЕСКИЕ</p>
 </div>
 
-<div class="container container_size-max">
+<div class="fruit-container fruit-container_size-min"></div>
 
-    <div class="fruit fruit_size-default">
-        <img class="fruit__img fruit__img_fixed" src="assets/images/product/kumkvat.jpeg" alt="">
-        <div class="fruit__info">
-            <p class="fruit__name fruit__name_centered">КУМКВАТ</p>
-            <p class="fruit__description fruit__description_centered">Вкусом обладают кисло-сладким, напоминающим вкус мандаринов, со сладкой съедобной кожурой.</p>
-            <div class="fruit__price fruit__price_centered">
-                <p class="fruit__price-num fruit__price-num_centered">8&nbsp</p>
-                <p class="fruit__price-text fruit__price-text_centered">грн/шт</p>
-            </div>
-            <div class="fruit__buttons fruit__buttons_centered">
-                <button class="fruit__shopping-cart fruit__shopping-cart_size-max">
-                    <p class="fruit__shopping-cart-text fruit__shopping-cart-text_centered">В корзину</p>
-                    <img src="assets/images/shopping-cart-white.svg" alt="shopping-cart">
-                </button>
-                <button class="fruit__favourite fruit_favourite_size-max">
-                    <img src="assets/images/heart-white.svg" alt="shopping-cart">
-                </button>
-            </div>
-        </div>
-    </div>
+<h1 class="shopping-cart__text">ВАША КОРЗИНА</h1>
 
-    <div class="fruit fruit_size-default">
-        <img class="fruit__img fruit__img_fixed" src="assets/images/product/kumkvat.jpeg" alt="">
-        <div class="fruit__info">
-            <p class="fruit__name fruit__name_centered">КУМКВАТ</p>
-            <p class="fruit__description fruit__description_centered">Вкусом обладают кисло-сладким, напоминающим вкус мандаринов, со сладкой съедобной кожурой.</p>
-            <div class="fruit__price fruit__price_centered">
-                <p class="fruit__price-num fruit__price-num_centered">8&nbsp</p>
-                <p class="fruit__price-text fruit__price-text_centered">грн/шт</p>
-            </div>
-            <div class="fruit__buttons fruit__buttons_centered">
-                <button class="fruit__shopping-cart fruit__shopping-cart_size-max">
-                    <p class="fruit__shopping-cart-text fruit__shopping-cart-text_centered">В корзину</p>
-                    <img src="assets/images/shopping-cart-white.svg" alt="shopping-cart">
-                </button>
-                <button class="fruit__favourite fruit_favourite_size-max">
-                    <img src="assets/images/heart-white.svg" alt="shopping-cart">
-                </button>
-            </div>
-        </div>
-    </div>
+<div class="order-container order-container_size-max"></div>
 
-    <div class="fruit fruit_size-default">
-        <img class="fruit__img fruit__img_fixed" src="assets/images/product/kumkvat.jpeg" alt="">
-        <div class="fruit__info">
-            <p class="fruit__name fruit__name_centered">КУМКВАТ</p>
-            <p class="fruit__description fruit__description_centered">Вкусом обладают кисло-сладким, напоминающим вкус мандаринов, со сладкой съедобной кожурой.</p>
-            <div class="fruit__price fruit__price_centered">
-                <p class="fruit__price-num fruit__price-num_centered">8&nbsp</p>
-                <p class="fruit__price-text fruit__price-text_centered">грн/шт</p>
-            </div>
-            <div class="fruit__buttons fruit__buttons_centered">
-                <button class="fruit__shopping-cart fruit__shopping-cart_size-max">
-                    <p class="fruit__shopping-cart-text fruit__shopping-cart-text_centered">В корзину</p>
-                    <img src="assets/images/shopping-cart-white.svg" alt="shopping-cart">
-                </button>
-                <button class="fruit__favourite fruit_favourite_size-max">
-                    <img src="assets/images/heart-white.svg" alt="shopping-cart">
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <div class="fruit fruit_size-default">
-        <img class="fruit__img fruit__img_fixed" src="assets/images/product/kumkvat.jpeg" alt="">
-        <div class="fruit__info">
-            <p class="fruit__name fruit__name_centered">КУМКВАТ</p>
-            <p class="fruit__description fruit__description_centered">Вкусом обладают кисло-сладким, напоминающим вкус мандаринов, со сладкой съедобной кожурой.</p>
-            <div class="fruit__price fruit__price_centered">
-                <p class="fruit__price-num fruit__price-num_centered">8&nbsp</p>
-                <p class="fruit__price-text fruit__price-text_centered">грн/шт</p>
-            </div>
-            <div class="fruit__buttons fruit__buttons_centered">
-                <button class="fruit__shopping-cart fruit__shopping-cart_size-max">
-                    <p class="fruit__shopping-cart-text fruit__shopping-cart-text_centered">В корзину</p>
-                    <img src="assets/images/shopping-cart-white.svg" alt="shopping-cart">
-                </button>
-                <button class="fruit__favourite fruit_favourite_size-max">
-                    <img src="assets/images/heart-white.svg" alt="shopping-cart">
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <div class="fruit fruit_size-default">
-        <img class="fruit__img fruit__img_fixed" src="assets/images/product/kumkvat.jpeg" alt="">
-        <div class="fruit__info">
-            <p class="fruit__name fruit__name_centered">КУМКВАТ</p>
-            <p class="fruit__description fruit__description_centered">Вкусом обладают кисло-сладким, напоминающим вкус мандаринов, со сладкой съедобной кожурой.</p>
-            <div class="fruit__price fruit__price_centered">
-                <p class="fruit__price-num fruit__price-num_centered">8&nbsp</p>
-                <p class="fruit__price-text fruit__price-text_centered">грн/шт</p>
-            </div>
-            <div class="fruit__buttons fruit__buttons_centered">
-                <button class="fruit__shopping-cart fruit__shopping-cart_size-max">
-                    <p class="fruit__shopping-cart-text fruit__shopping-cart-text_centered">В корзину</p>
-                    <img src="assets/images/shopping-cart-white.svg" alt="shopping-cart">
-                </button>
-                <button class="fruit__favourite fruit_favourite_size-max">
-                    <img src="assets/images/heart-white.svg" alt="shopping-cart">
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
+<button class="order__confirm-button order__confirm-button_size-max" onclick="showClientInfo()">ВСЕГО: 26 грн</button>
 
 <div class="footer footer_size-max" >
     <div class="footer__column_size-max"></div>
@@ -192,6 +91,34 @@
             </a>
         </div>
     </div>
+</div>
+
+
+<div class="client client_size-max">
+    <p>ВАШИ КОНТАКТНЫЕ ДАННЫЕ</p>
+    <div class="client__block client__block_size-max">
+        <p>email</p>
+        <input type="text" class="client__input client__input_default">
     </div>
+    <div class="client__block client__block_size-max">
+        <p>phone</p>
+        <input type="text" class="client__input client__input_default">
+    </div>
+    <div class="client__block client__block_size-max">
+        <p>destination</p>
+        <input type="text" class="client__input client__input_default">
+    </div>
+    <div class="client__block client__block_size-max">
+        <button class="client__confirm-button client__confirm-button_size-max" onclick="hideClientInfo()">Подтвердить</button>
+    </div>
+</div>
 </body>
+<script src="assets/js/showProducts.js" type="text/javascript"></script>
+<script src="assets/js/showCart.js" type="text/javascript"></script>
+<script src="assets/js/search.js" type="text/javascript"></script>
+<script src="assets/js/client.js" type="text/javascript"></script>
+<script src="assets/js/utils.js" type="text/javascript"></script>
+<script>
+    showProducts();
+</script>
 </html>

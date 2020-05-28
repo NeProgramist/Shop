@@ -5,14 +5,15 @@
 @import "css/fruit-price.css";
 @import "css/fruit-container.css";
 @import "css/footer.css";
-
+@import "css/order-container.css";
+@import "css/client.css";
 
 
 /*АДАПТИВНОСТЬ*/
 @media (min-width: 800px) {
     .fruit:hover {
         box-shadow: 0 0 50px rgba(100%, 100%, 100%, 0.5);
-        transform: scale(1.2);
+        transform: scale(1.1);
         transition: all 0.5s ease;
     }
 
@@ -24,20 +25,48 @@
         display: flex;
     }
 
-    .container {
+    .fruit-container {
         grid-template-columns: 1fr 1fr;
+        min-height: 600px;
     }
 
     .additional-information {
         display: none;
     }
+
+
+    .client_size-max {
+        width: 600px;
+        padding:10px 50px 50px 50px;
+    }
 }
 
 @media (min-width: 1000px) {
 
+    .order {
+        grid-template-columns:1fr 1fr;
+        justify-content: center;
+    }
+
+    .order__confirm-button_size-max {
+        margin: 0 15% 100px auto;
+    }
+
+    .order_hidden {
+        display: grid;
+    }
+
+    .fruit_size-default {
+        margin: 20px;
+    }
+
+    .header__bottom {
+        display: none;
+    }
+
     .fruit:hover {
         box-shadow: 0 0 50px rgba(100%, 100%, 100%, 0.5);
-        transform: scale(1.2);
+        transform: scale(1.1);
         transition: all 0.5s ease;
     }
 
@@ -58,6 +87,7 @@
     }
 
     .select_max-width {
+        margin: 30px auto 10px auto;
         max-width: 660px;
         width: 660px;
         height: 50px;
@@ -71,7 +101,7 @@
         display: flex;
     }
 
-    .container {
+    .fruit-container {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
