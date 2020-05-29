@@ -1,7 +1,11 @@
 <?php
 require_once 'database.php';
 
-$client_id = 12;
+$client_data = trim($_POST["data"]);
+
+$query_client = "SELECT id FROM clients.clients WHERE email = '$client_data' or phone_number = '$client_data'";
+$id = mysqli_query($link, $query_client) or die("Cannot get data: " . mysqli_error($link));
+$client_id = mysqli_fetch_row($id)[0];
 
 $query ="
 SELECT * FROM shop.orders o

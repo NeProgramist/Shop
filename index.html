@@ -109,7 +109,7 @@
         <input type="text" class="client__input client__input_default">
     </div>
     <div class="client__block client__block_size-max">
-        <button class="client__confirm-button client__confirm-button_size-max" onclick="hideClientInfo()">Подтвердить</button>
+        <button class="client__confirm-button client__confirm-button_size-max" onclick="confirmOrder()">Подтвердить</button>
     </div>
 </div>
 </body>
@@ -120,5 +120,16 @@
 <script src="assets/js/utils.js" type="text/javascript"></script>
 <script>
     showProducts();
+    // just test get_order
+    const xhr = new XMLHttpRequest();
+    const a = prompt("if u want see your order, please put here your phone or email");
+    const body = `data=${encodeURIComponent(a.toString())}`;
+    xhr.open("POST", 'assets/php/get_order.php', true);
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    xhr.send(body);
+    xhr.onload = () => {
+       console.log(JSON.parse(xhr.response))
+    }
+
 </script>
 </html>

@@ -21,7 +21,6 @@ const confirmOrder = () => {
 
     } else {
         const xhr = new XMLHttpRequest();
-
         const body = `email=${encodeURIComponent(email.value)}&phone=${encodeURIComponent(phone.value)}`;
         xhr.open("POST", 'assets/php/registration.php', true);
         xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
