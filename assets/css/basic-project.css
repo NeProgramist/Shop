@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=cyrillic');
 
 :root{
+    --red: #910000;
     --primary-purple: #B083C0;
     --purple-dark: #805C8D;
     --purple-light: #D7C1E0;

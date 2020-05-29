@@ -46,6 +46,11 @@
     margin: 7px auto;
 }
 
+.client__input_error {
+    border: 2px solid var(--red);
+    outline-offset: -2px;
+}
+
 .client__confirm-button {
     border: none;
     border-radius: 15px;
