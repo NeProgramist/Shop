@@ -40,9 +40,10 @@ const confirmOrder = () => {
             xhrOrder.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
             xhrOrder.send(bodyOrder)
         };
-
-
-
+        for(const i in localStorage) {
+            if (i.substring(0, 5) === "order") localStorage.removeItem(i);
+        }
+        showProducts(0);
         document.getElementsByClassName("client client_size-max")[0].style.display = "none";
     }
 
