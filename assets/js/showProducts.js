@@ -11,7 +11,7 @@ async function showProducts(type = 0, search = "") {
         }
     } else ids = [];
 
-    const products = await getProducts(type, search, ids.join(","));
+    const products = await getProducts(type, search.trim(), ids.join(","));
     const container = document.getElementsByClassName("fruit-container")[0];
     container.innerHTML = "";
     for (const {product_id: id, name, description, price, discount, image_source} of products) {
@@ -121,7 +121,6 @@ async function favouriteHover(id, event) {
             event.target.firstChild.src = URL.createObjectURL(await getImg("assets/images/heart-orange.svg"));
     }
 }
-
 
 function saveOrder(id) {
     const cur = localStorage.getItem(`order${id}`) || 0;
