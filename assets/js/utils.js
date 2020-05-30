@@ -44,7 +44,7 @@ async function menuHover(type) {
         menu[type].className = "select__item select__item_enabled";
 }
 
-async function getProducts(type = 0, search = "", ids = []) {
+async function getProducts(type = 0, search = "", ids = "") {
     return fetch(`./assets/php/products.php?type=${type}&search=${search}&ids=${ids}`)
         .then(value => value.json())
         .catch(console.log);
