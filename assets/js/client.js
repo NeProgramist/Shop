@@ -32,19 +32,20 @@ const confirmOrder = () => {
                     productCount.push([parseInt(i.substring(5)), parseInt(localStorage.getItem(i))])
             }
             const xhrOrder = new XMLHttpRequest();
+            console.log(JSON.stringify(productCount));
             const bodyOrder =
                 `id=${encodeURIComponent(JSON.parse(xhr.response).id)}
                  &delivery=${encodeURIComponent(destination.value)}
                  &count=${encodeURIComponent(JSON.stringify(productCount))}`;
             xhrOrder.open("POST", 'assets/php/new_order.php', true);
             xhrOrder.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-            xhrOrder.send(bodyOrder)
+            xhrOrder.send(bodyOrder);
+            for(const i in localStorage) {
+                if (i.substring(0, 5) === "order") localStorage.removeItem(i);
+            }
+            showProducts(0);
+            document.getElementsByClassName("client client_size-max")[0].style.display = "none";
         };
-        for(const i in localStorage) {
-            if (i.substring(0, 5) === "order") localStorage.removeItem(i);
-        }
-        showProducts(0);
-        document.getElementsByClassName("client client_size-max")[0].style.display = "none";
     }
 
 };

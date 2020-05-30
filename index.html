@@ -121,15 +121,15 @@
 <script>
     showProducts();
     // just test get_order
-    const xhr = new XMLHttpRequest();
-    const a = prompt("if u want see your order, please put here your phone or email");
-    const body = `data=${encodeURIComponent(a.toString())}`;
-    xhr.open("POST", 'assets/php/get_order.php', true);
-    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-    xhr.send(body);
-    xhr.onload = () => {
-       console.log(JSON.parse(xhr.response))
-    }
+    // const xhr = new XMLHttpRequest();
+    // const a = prompt("if u want see your order, please put here your phone or email");
+    // const body = `data=${encodeURIComponent(a.toString())}`;
+    // xhr.open("POST", 'assets/php/get_order.php', true);
+    // xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    // xhr.send(body);
+    // xhr.onload = () => {
+    //    console.log(JSON.parse(xhr.response))
+    // }
 
 </script>
 </html>

@@ -13,7 +13,7 @@ if($id != null && $delivery != null) {
     if ($order) {
         $order_id = mysqli_fetch_row($order)[0];
         for ($i = 0; $i < count($product_count); $i++) {
-            $insert_po = "INSERT INTO shop.product_orders (order_id, product_id, count) VALUES('$order_id','{$product_count[$i][0]}','{$product_count[$i][1]}')";
+            $insert_po = "INSERT INTO shop.product_orders (product_id, order_id, count) VALUES('{$product_count[$i][0]}','$order_id','{$product_count[$i][1]}')";
             mysqli_query($link, $insert_po) or die("Cannot get data: " . mysqli_error($link));
         }
     }
